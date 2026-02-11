@@ -1,9 +1,10 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mopl-mysql-dev.cd8oe2q2qsl0.ap-northeast-2.rds.amazonaws.com:3306/mopl_dev?useSSL=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
-    username: ${MYSQL_DEV_USER}
-    password: ${MYSQL_DEV_PASSWORD}
+    #url: jdbc:mysql://mopl-mysql-dev.cd8oe2q2qsl0.ap-northeast-2.rds.amazonaws.com:3306/mopl_dev?useSSL=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:

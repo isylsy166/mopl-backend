@@ -10,7 +10,6 @@ spring:
     group:
       dev: core-dev
       prod: core-prod
-      local: core-local
   servlet:
     multipart:
       max-file-size: 10MB
